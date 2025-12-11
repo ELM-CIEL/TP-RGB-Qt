@@ -1,3 +1,4 @@
+#include <QtWidgets>
 #include "mymainwindow.h"
 #include "ui_mymainwindow.h"
 
@@ -6,9 +7,14 @@ MyMainWindow::MyMainWindow(QWidget *parent)
     , ui(new Ui::MyMainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MyMainWindow::~MyMainWindow()
 {
     delete ui;
+    QWidget *centralWidget = new QWidget;
+    setCentralWidget(centralWidget);
+
+    setFixedSize(480,210);
 }
