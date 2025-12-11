@@ -14,7 +14,7 @@
    <string>Visualisation RGB</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -29,21 +29,21 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_slider">
          <item>
-          <widget class="QSlider" name="horizontalSlider_Rouge">
+          <widget class="QSlider" name="sliderR">
            <property name="orientation">
             <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSlider" name="horizontalSlider_Vert">
+          <widget class="QSlider" name="sliderV">
            <property name="orientation">
             <enum>Qt::Orientation::Horizontal</enum>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSlider" name="horizontalSlider_Bleu">
+          <widget class="QSlider" name="sliderB">
            <property name="orientation">
             <enum>Qt::Orientation::Horizontal</enum>
            </property>
@@ -54,21 +54,21 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QSpinBox" name="spinBox_Rouge">
+          <widget class="QSpinBox" name="spinR">
            <property name="maximum">
             <number>255</number>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox_Vert">
+          <widget class="QSpinBox" name="spinG">
            <property name="maximum">
             <number>255</number>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox_Bleu">
+          <widget class="QSpinBox" name="spinB">
            <property name="maximum">
             <number>255</number>
            </property>
@@ -79,7 +79,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_hex">
+      <widget class="QLineEdit" name="labelCouleur">
        <property name="text">
         <string/>
        </property>

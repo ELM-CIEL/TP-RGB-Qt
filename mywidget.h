@@ -9,28 +9,29 @@
 class MyWidget : public QWidget
 {
     Q_OBJECT
-    public:
-        MyWidget(QWidget *parent=0);
+public:
+    MyWidget(QWidget *parent = 0);
 
-    protected slots:
-        void horizontalSlider_Rouge(int value);
-        void horizontalSlider_Vert(int value);
-        void horizontalSlider_Bleu(int value);
+protected slots:
+    void RedAdjust(int value);
+    void GreenAdjust(int value);
+    void BlueAdjust(int value);
 
-    private:
-        /* Je dois ajouter les widgets & méthodes privées*/
-        QSlider *sliderR;
-        QSlider *sliderG;
-        QSlider *sliderB;
+private:
+    // Widgets privés
+    QSlider *sliderR;
+    QSlider *sliderG;
+    QSlider *sliderB;
 
-        QSpinBox *spinBoxR;
-        QSpinBox *spinBoxG;
-        QSpinBox *spiBoxB;
+    QSpinBox *spinR;
+    QSpinBox *spinG;
+    QSpinBox *spinB;
 
-        QLabel *labelCouleur;
+    QLabel *labelCouleur;
 
-        void init();
-        void changeCouleur();
+    // Méthodes privées
+    void Init();
+    void RGBAdjust();
 };
 
 #endif // MYWIDGET_H
