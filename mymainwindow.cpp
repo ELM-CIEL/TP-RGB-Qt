@@ -1,20 +1,14 @@
 #include <QtWidgets>
 #include "mymainwindow.h"
-#include "ui_mymainwindow.h"
+#include "mywidget.h"
 
 MyMainWindow::MyMainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MyMainWindow)
 {
-    ui->setupUi(this);
-
-}
-
-MyMainWindow::~MyMainWindow()
-{
-    delete ui;
-    QWidget *centralWidget = new QWidget;
+    MyWidget *centralWidget = new MyWidget;
     setCentralWidget(centralWidget);
+    setWindowTitle("Visionneur RGB v1");
+    resize(400,500);
 
-    setFixedSize(480,210);
+
 }

@@ -17,8 +17,7 @@ HEADERS += \
     mymainwindow.h \
     mywidget.h
 
-FORMS += \
-    mymainwindow.ui
+FORMS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

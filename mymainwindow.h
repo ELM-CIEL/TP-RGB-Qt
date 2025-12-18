@@ -4,9 +4,6 @@
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MyMainWindow;
-}
 QT_END_NAMESPACE
 
 class MyMainWindow : public QMainWindow
@@ -15,9 +12,5 @@ class MyMainWindow : public QMainWindow
 
 public:
     MyMainWindow(QWidget *parent = nullptr);
-    ~MyMainWindow();
-
-private:
-    Ui::MyMainWindow *ui;
 };
 #endif // MYMAINWINDOW_H
